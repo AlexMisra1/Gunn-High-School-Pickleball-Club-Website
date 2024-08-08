@@ -1,0 +1,1 @@
+This is a website template for Pickleball Clubs to use. Fork it into your own repo to use.
