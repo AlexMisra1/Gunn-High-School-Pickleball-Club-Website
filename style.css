@@ -85,11 +85,11 @@ p {
     width: 150px; /* Set width */
     height: 150px; /* Set height to make it a square */
     border-radius: 50%; /* Circular image */
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Remove margin */
 }
 
 .bio h4 {
-    margin-bottom: 5px;
+    margin: 5px 0; /* Remove margin */
     color: #333;
     font-size: 20px; /* Increased font size */
 }
@@ -186,5 +186,47 @@ footer p {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    p {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 }
