@@ -1,10 +1,13 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
@@ -21,8 +24,6 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
@@ -44,12 +45,11 @@ nav ul li a:hover {
 .section {
     padding: 60px 20px;
     text-align: center;
-    background: #f4f4f4;
     border-bottom: 1px solid #ddd;
 }
 
 .section:nth-of-type(odd) {
-    background: #fff;
+    background: #f4f4f4;
 }
 
 h1, h2, h3 {
@@ -68,40 +68,40 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px 0;
 }
 
 .bio {
     width: calc(33.333% - 20px);
-    overflow: hidden;
-    text-align: center;
+    background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background: #fff;
-    padding: 20px 10px 10px;
+    overflow: hidden;
 }
 
 .bio img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.bio-info {
+    padding: 15px;
+    text-align: center;
 }
 
 .bio h4 {
-    margin: 5px 0;
+    margin: 10px 0;
     color: #333;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .bio .role {
-    margin-bottom: 10px;
     color: #777;
     font-style: italic;
+    margin-bottom: 10px;
 }
 
 .bio p {
-    margin: 0;
     color: #666;
 }
 
@@ -115,6 +115,7 @@ table {
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
+    text-align: center;
 }
 
 th {
@@ -132,17 +133,16 @@ td {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding: 20px 0;
 }
 
 .gallery-item {
     position: relative;
     width: calc(33.333% - 10px);
-    height: 300px; /* Set a fixed height for consistency */
-    overflow: hidden;
+    height: 300px;
+    background: #000;
     border-radius: 5px;
+    overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background: #000; /* Background color to show behind the images */
 }
 
 .gallery-item img {
@@ -174,23 +174,6 @@ td {
     opacity: 1;
 }
 
-/* Responsive Design for Gallery and About Us */
-@media (max-width: 768px) {
-    .gallery-item, .bio {
-        width: calc(50% - 10px);
-    }
-
-    table {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item, .bio {
-        width: 100%;
-    }
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -199,12 +182,7 @@ footer {
     color: #fff;
 }
 
-footer p {
-    max-width: none;
-    margin: 0;
-}
-
-/* Responsive Design for Entire Website */
+/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -222,20 +200,16 @@ footer p {
         padding: 40px 20px;
     }
 
-    p {
-        max-width: 90%;
+    .gallery-item, .bio {
+        width: calc(50% - 10px);
+    }
+
+    table {
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
     nav ul li a {
         font-size: 14px;
     }
@@ -244,8 +218,8 @@ footer p {
         padding: 30px 15px;
     }
 
-    p {
-        max-width: 100%;
+    .gallery-item, .bio {
+        width: 100%;
     }
 
     h1 {
