@@ -10,6 +10,12 @@ body {
     line-height: 1.6;
 }
 
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
     background: #333;
     color: #fff;
@@ -24,6 +30,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -43,7 +50,7 @@ nav ul li a:hover {
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 60px 0;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
@@ -107,7 +114,8 @@ p {
 
 /* Schedule Table */
 table {
-    width: 80%;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     border-collapse: collapse;
 }
@@ -176,14 +184,32 @@ td {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px 0;
     background: #333;
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 /* Responsive Design */
-@media (max-width: 567px) {
+@media (max-width: 1200px) {
+    .content-wrapper {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .gallery-item, .bio {
+        width: calc(50% - 10px);
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 597px) {
+
     nav ul {
         flex-direction: column;
     }
@@ -195,24 +221,9 @@ footer {
     nav ul li a {
         font-size: 16px;
     }
-
-    .section {
-        padding: 40px 20px;
-    }
-
-    .gallery-item, .bio {
-        width: calc(50% - 10px);
-    }
-
-    table {
-        width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
-    nav ul li a {
-        font-size: 14px;
-    }
 
     .section {
         padding: 30px 15px;
