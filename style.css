@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #c03434;
     color: #fff;
     padding: 10px 0;
     position: sticky;
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #a12c2c;
 }
 
 .section {
@@ -195,7 +195,7 @@ td {
 
 /* Footer */
 footer {
-    background: #333;
+    background: #c03434;
     color: #fff;
     padding: 10px 0;
     text-align: center;
