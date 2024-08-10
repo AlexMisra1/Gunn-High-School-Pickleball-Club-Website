@@ -83,12 +83,20 @@ p {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .bio img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
+    width: 150px; /* Standard size */
+    height: 150px; /* Standard size */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #ddd; /* Optional border */
+    display: block;
 }
 
 .bio-info {
@@ -186,7 +194,7 @@ td {
 footer {
     background: #333;
     color: #fff;
-    padding: 10px 0; /* Match the padding of the header */
+    padding: 10px 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -194,8 +202,8 @@ footer {
 }
 
 footer p {
-    max-width: none; /* Override the general paragraph styles */
-    margin: 0; /* Override the general margin for the paragraph */
+    max-width: none;
+    margin: 0;
 }
 
 /* Responsive Design */
