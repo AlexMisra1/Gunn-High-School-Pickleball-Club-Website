@@ -186,8 +186,16 @@ td {
 footer {
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0; /* Match the padding of the header */
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    max-width: none; /* Override the general paragraph styles */
+    margin: 0; /* Override the general margin for the paragraph */
 }
 
 /* Responsive Design */
@@ -198,7 +206,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
     .gallery-item, .bio {
         width: calc(50% - 10px);
     }
@@ -209,7 +216,6 @@ footer {
 }
 
 @media (max-width: 597px) {
-
     nav ul {
         flex-direction: column;
     }
@@ -224,7 +230,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-
     .section {
         padding: 30px 15px;
     }
