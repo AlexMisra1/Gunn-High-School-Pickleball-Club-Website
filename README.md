@@ -27,6 +27,7 @@ This template is designed to help you quickly set up a professional-looking webs
 - **style.css:** The CSS file containing all styles for the template.
 - **images/:** A directory for storing all images used in the template.
 - **README.md:** This file.
+- **LICENSE:** The MIT License file.
 
 ## Customization Tips
 
@@ -45,7 +46,7 @@ For better SEO and social media integration, don't forget to add the following m
 
 ## License
 
-This template is open-source and free to use for personal and commercial projects. If you find it helpful, consider giving a shout-out to the original author!
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ## Contributing
 
