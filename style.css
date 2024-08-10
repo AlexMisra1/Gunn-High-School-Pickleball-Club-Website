@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background: #c03434;
+    background: #333;
     color: #fff;
     padding: 10px 0;
     position: sticky;
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #a12c2c;
+    background: #555;
 }
 
 .section {
@@ -83,11 +83,10 @@ p {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px 0;
 }
 
 .bio img {
@@ -96,12 +95,16 @@ p {
     object-fit: cover; /* Ensure the image covers the entire area */
     border-radius: 50%; /* Circular image */
     border: 2px solid #ddd; /* Optional border */
-    display: block;
+    margin-bottom: 10px; /* Add space below the image */
 }
 
 .bio-info {
-    padding: 15px;
+    padding: 0 15px;
     text-align: center;
+    flex-grow: 1; /* Allow the bio-info to grow to take available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bio h4 {
@@ -192,7 +195,7 @@ td {
 
 /* Footer */
 footer {
-    background: #c03434;
+    background: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
