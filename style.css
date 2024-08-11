@@ -227,6 +227,10 @@ footer p {
 }
 
 @media (max-width: 597px) {
+    header {
+        position: static; /* Change to non-sticky */
+    }
+
     nav ul {
         flex-direction: column;
     }
