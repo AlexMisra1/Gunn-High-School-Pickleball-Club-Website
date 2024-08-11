@@ -28,6 +28,7 @@ This template is designed to help you quickly set up a professional-looking webs
 - **images/:** A directory for storing all images used in the template.
 - **README.md:** This file.
 - **LICENSE:** The MIT License file.
+- (All other files can be disregarded; they are related to the favicon.)
 
 ## Customization Tips
 
